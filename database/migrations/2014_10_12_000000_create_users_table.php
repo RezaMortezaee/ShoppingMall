@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->string('user_name');
+            $table->string('phone_number');
             $table->string('city');
             $table->string('birth_date');
             $table->string('about');
