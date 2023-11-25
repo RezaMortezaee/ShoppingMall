@@ -28,6 +28,10 @@ class UserFactory extends Factory
             'two_factor_secret' => null,
             'two_factor_recovery_codes' => null,
             'remember_token' => Str::random(10),
+            'user_name' => $this->faker->userName(),
+            'city'=> $this->faker->city(),
+            'about'=> $this->faker->text(),
+            'phone'=> $this->faker->phoneNumber(),
             'profile_photo_path' => null,
             'current_team_id' => null,
         ];
