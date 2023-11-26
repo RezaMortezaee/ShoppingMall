@@ -31,7 +31,7 @@ class UserFactory extends Factory
             'user_name' => $this->faker->userName(),
             'city'=> $this->faker->city(),
             'about'=> $this->faker->text(),
-            'phone'=> $this->faker->phoneNumber(),
+            'phone_number'=> $this->faker->phoneNumber(),
             'profile_photo_path' => null,
             'current_team_id' => null,
         ];
