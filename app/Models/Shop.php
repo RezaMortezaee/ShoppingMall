@@ -21,4 +21,8 @@ class Shop extends Model
         'cancelleations',
         'returns'
     ];
+
+    protected $cast = [
+        'payment_options'=> 'array',
+    ];
 }
