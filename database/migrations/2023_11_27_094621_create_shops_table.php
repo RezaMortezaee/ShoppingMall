@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('image');
+            $table->text('description');
+            $table->string('phone_number');
+            $table->string('city');
+            $table->text('policies');
+            $table->text('shipping');
+            $table->enum('payment_options',['visa', 'master', 'paypal', 'other']);
+            $table->text('cancelleations');
+            $table->text('returns');
             $table->timestamps();
         });
     }
