@@ -17,7 +17,17 @@ class ShopFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => fake()->name(),
+            'description' => fake()->text(),
+            'phone_number' => fake()->phoneNumber(),
+            'image' => null,
+            'city' => fake()->city(),
+            'policies' => fake()->text(),
+            'shipping' => fake()->text(),
+            'payment_options' => fake()->randomElement(['visa', 'mastercard', 'paypal']),
+            'cancellation' => fake()->text(),
+            'returns' => fake()->text(),
         ];
     }
 }
+
