@@ -18,7 +18,7 @@ class Shop extends Model
         'policies',
         'shipping',
         'payment_options',
-        'cancelleations',
+        'cancellation',
         'returns'
     ];
 
