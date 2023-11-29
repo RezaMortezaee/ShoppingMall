@@ -5,8 +5,9 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
-use App\Models\Seller;
+use Database\Seeders\UserSeeder;
+use Database\Seeders\ShopSeeder;
+use Database\Seeders\SellerSeeder;
 
 class DatabaseSeeder extends Seeder
 {
