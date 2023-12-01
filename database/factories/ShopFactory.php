@@ -24,7 +24,7 @@ class ShopFactory extends Factory
             'city' => fake()->city(),
             'policies' => fake()->text(),
             'shipping' => fake()->text(),
-            'payment_options' => fake()->randomElement(['visa', 'mastercard', 'paypal']),
+            'payment_options' => fake()->randomElement(['visa', 'master', 'paypal', 'other']),
             'cancellation' => fake()->text(),
             'returns' => fake()->text(),
         ];
