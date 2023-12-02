@@ -5,9 +5,10 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use Illuminate\Database\Seeder;
-use Database\Seeders\UserSeeder;
 use Database\Seeders\ShopSeeder;
+use Database\Seeders\UserSeeder;
 use Database\Seeders\SellerSeeder;
+use Database\Seeders\CommentSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,6 +21,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             ShopSeeder::class,
             SellerSeeder::class,
+            CommentSeeder::class,
         ]);
     }
 }
